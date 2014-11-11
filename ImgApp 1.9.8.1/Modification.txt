@@ -1,0 +1,94 @@
+2010/01/01  1.9.8.1
+* 新增 CDFileNew (Dialog Class)
+	開新檔案時可以自訂大小或選取影像。
+* 刪除 bool CImgAppView::m_bShowImage 及其相關函式
+	改寫開新檔案流程，這個變數即可剔除。
+
+2010/04/23  1.5.5.1
+* 新增 char *fnCStringToChar(CString str)
+	將 CString 轉成 char*
+* 新增 void fnSetStatusBar(CString str);
+* 新增 void fnSetStatusBar(CString str, int index);
+	在狀態列顯示文字
+* 修改 IDR_ImgAppTYPE 129 \nImage\nImgApp\n\n\nImgApp.Document\nImgApp.Document
+	讓每個 Child frame 的標題開頭為 Image
+	
+2010/04/23  1.4.23.1
+* 新增 void CImgAppView::OnMouseMove(UINT nFlags, CPoint point)
+	滑鼠移動時，在狀態列裡面顯示座標及顏色
+
+2010/01/18  1.1.18.1
+* 新增 CDSetValues (Dialog Class)
+	便於在開發時期設定輸出/輸入變數。
+* 新增 void CImgAppView::OnFileSaveHistory()
+	將歷程中的所有圖片儲存到檔案，檔名會依序增加適當數序。
+
+2010/01/01  1.1.1.1
+* 新增 void CImgAppView::OnFileOpen();
+	開啟舊檔
+* 新增 void CImgAppView::OnFileSave();
+	儲存檔案
+* 新增 void CImgAppView::OnFileSaveAs();
+	另存新檔
+* 新增 void CImgAppView::OnEditHistoryLast();
+	上一步，還原上一個動作
+* 新增 void CImgAppView::OnEditHistoryNext();
+	下一步，還原下一個動作
+* 新增 void CImgAppView::OnViewSizeSmaller();
+	縮小，將影像縮小( 80% )
+* 新增 void CImgAppView::OnViewSizeLarger();
+	放大，將影像放大( 125% )
+* 新增 void CImgAppView::OnViewSizeOriginal();
+	原始大小，將影像縮放成原始大小
+* 新增 void CImgAppView::OnViewSizeFill();
+	最適大小，將影像縮放成最佳瀏覽效果
+* 新增 void CImgAppView::OnViewSizeFillWidth();
+	適應寬度，將影像縮放成可以看到完整寬度
+* 新增 void CImgAppView::OnViewSizeFillHeight();
+	適應高度，將影像縮放成可以看到完整高度
+* 新增 void CImgAppView::OnViewAddtohistory();
+	將目前檢視，將目前檢視的畫面加入歷程當中
+* 新增 void CImgAppView::OnTestFunction0();
+	測試函數0
+* 新增 void CImgAppView::OnTestFunction1();
+	測試函數1
+* 新增 void CImgAppView::OnTestFunction2();
+	測試函數2
+* 新增 void CImgAppView::OnTestFunction3();
+	測試函數3
+* 新增 void CImgAppView::OnTestFunction4();
+	測試函數4
+* 新增 void CImgAppView::OnTestFunction5();
+	測試函數5
+* 新增 void CImgAppView::OnTestFunction6();
+	測試函數6
+* 新增 void CImgAppView::OnTestFunction7();
+	測試函數7
+* 新增 void CImgAppView::OnTestFunction8();
+	測試函數8
+* 新增 void CImgAppView::OnTestFunction9();
+	測試函數9
+* 新增 void CImgAppView::OnViewRgbR();
+	取得紅色通道畫面
+* 新增 void CImgAppView::OnViewRgbG();
+	取得綠色通道畫面
+* 新增 void CImgAppView::OnViewRgbB();
+	取得藍色通道畫面
+* 新增 int fnCopyCImage(CImage *pDestination, CImage *pSource);
+	複製CImage
+* 新增 bool fnCheckCImageIs24Bits(CImage *pImage);
+	檢查CImage是否為24Bits
+* 新增 int fnFixImage24Bits(CImage *pImage);
+	將CImage修正成24Bits
+* 新增 bool fnIsEqualImage(CImage *pImageA, CImage *pImageB);
+	檢查兩張CImage的內容是否一樣
+* 新增 int fnGray(CImage *pImage);
+	將CImage灰階 [(R+G+B)/3]
+* 新增 int fnNegative(CImage *pImage);
+	將CImage負相
+* 新增 int fnGetRChannel(CImage *pDestination, CImage *pSource);
+	取得CImage的紅色通道
+* 新增 int fnGetGChannel(CImage *pDestination, CImage *pSource);
+	取得CImage的綠色通道
+* 新增 int fnGetBChannel(CImage *pDestination, CImage *pSource);
+	取得CImage的藍色通道

@@ -1,0 +1,616 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文 (台灣) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHT)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_TRADITIONAL
+#pragma code_page(950)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHT)\r\n"
+    "LANGUAGE 4, 1\r\n"
+    "#pragma code_page(950)\r\n"
+    "#include ""res\\ImgApp.rc2""  // 非 Microsoft Visual C++ 編輯過的資源\r\n"
+    "#include ""afxres.rc""         // 標準元件\r\n"
+    "#include ""afxprint.rc""       // 列印/預覽列印資源\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\ImgApp.ico"
+IDR_ImgAppTYPE          ICON                    "res\\ImgAppDoc.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP                  "res\\Toolbar.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR  16, 15
+BEGIN
+    BUTTON      ID_FILE_NEW
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_SAVE
+    SEPARATOR
+    BUTTON      ID_EDIT_CUT
+    BUTTON      ID_EDIT_COPY
+    BUTTON      ID_EDIT_PASTE
+    SEPARATOR
+    BUTTON      ID_FILE_PRINT
+    BUTTON      ID_APP_ABOUT
+    SEPARATOR
+    BUTTON      ID_EDIT_HISTORY_LAST
+    BUTTON      ID_EDIT_HISTORY_NEXT
+    SEPARATOR
+    BUTTON      ID_VIEW_SIZE_SMALLER
+    BUTTON      ID_VIEW_SIZE_LARGER
+    BUTTON      ID_VIEW_SIZE_ORIGINAL
+    BUTTON      ID_VIEW_SIZE_FILL
+    BUTTON      ID_VIEW_SIZE_FILL_WIDTH
+    BUTTON      ID_VIEW_SIZE_FILL_HEIGHT
+    SEPARATOR
+    BUTTON      ID_VIEW_ADDTOHISTORY
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU 
+BEGIN
+    POPUP "檔案(&F)"
+    BEGIN
+        MENUITEM "開新檔案(&N)\tCtrl+N",            ID_FILE_NEW
+        MENUITEM "開啟舊檔(&O)...\tCtrl+O",         ID_FILE_OPEN
+        MENUITEM SEPARATOR
+        MENUITEM "列印設定(&R)...",                 ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "最近使用的檔案",                     ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "關閉(&C)",                      ID_FILE_CLOSE
+        MENUITEM "結束(&X)",                      ID_APP_EXIT
+    END
+    POPUP "檢視(&V)"
+    BEGIN
+        MENUITEM "工具列(&T)",                     ID_VIEW_TOOLBAR
+        MENUITEM "狀態列(&S)",                     ID_VIEW_STATUS_BAR
+    END
+    POPUP "說明(&H)"
+    BEGIN
+        MENUITEM "關於 ImgApp(&A)...",            ID_APP_ABOUT
+    END
+END
+
+IDR_ImgAppTYPE MENU 
+BEGIN
+    POPUP "檔案(&F)"
+    BEGIN
+        MENUITEM "開新檔案(&N)\tCtrl+N",            ID_FILE_NEW
+        MENUITEM "開啟舊檔(&O)...\tCtrl+O",         ID_FILE_OPEN
+        MENUITEM "關閉(&C)",                      ID_FILE_CLOSE
+        MENUITEM "儲存檔案(&S)\tCtrl+S",            ID_FILE_SAVE
+        MENUITEM "另存新檔(&A)...",                 ID_FILE_SAVE_AS
+        MENUITEM "另存所有歷程(&H)",                  ID_FILE_SAVE_HISTORY
+        MENUITEM SEPARATOR
+        MENUITEM "列印(&P)...\tCtrl+P",           ID_FILE_PRINT
+        MENUITEM "預覽列印(&V)",                    ID_FILE_PRINT_PREVIEW
+        MENUITEM "列印設定(&R)...",                 ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "最近使用的檔案",                     ID_FILE_MRU_FILE1
+        MENUITEM SEPARATOR
+        MENUITEM "結束(&X)",                      ID_APP_EXIT
+    END
+    POPUP "編輯(&E)"
+    BEGIN
+        MENUITEM "復原(&U)\tCtrl+Z",              ID_EDIT_UNDO
+        MENUITEM SEPARATOR
+        MENUITEM "剪下(&T)\tCtrl+X",              ID_EDIT_CUT
+        MENUITEM "複製(&C)\tCtrl+C",              ID_EDIT_COPY
+        MENUITEM "貼上(&P)\tCtrl+V",              ID_EDIT_PASTE
+        MENUITEM SEPARATOR
+        MENUITEM "上一步(&L)",                     ID_EDIT_HISTORY_LAST
+        MENUITEM "下一步(&N)",                     ID_EDIT_HISTORY_NEXT
+    END
+    POPUP "檢視(&V)"
+    BEGIN
+        MENUITEM "工具列(&T)",                     ID_VIEW_TOOLBAR
+        MENUITEM "狀態列(&S)",                     ID_VIEW_STATUS_BAR
+        POPUP "放大鏡(&L)"
+        BEGIN
+            MENUITEM "縮小(&S)",                      ID_VIEW_SIZE_SMALLER
+            MENUITEM "放大(&L)",                      ID_VIEW_SIZE_LARGER
+            MENUITEM "原始大小(&O)",                    ID_VIEW_SIZE_ORIGINAL
+            MENUITEM "最適大小(&F)",                    ID_VIEW_SIZE_FILL
+            MENUITEM "適應寬度(&W)",                    ID_VIEW_SIZE_FILL_WIDTH
+            MENUITEM "適應高度(&H)",                    ID_VIEW_SIZE_FILL_HEIGHT
+        END
+        POPUP "RGB(&R)"
+        BEGIN
+            MENUITEM "紅(&R)",                       ID_VIEW_RGB_R
+            MENUITEM "綠(&G)",                       ID_VIEW_RGB_G
+            MENUITEM "藍(&B)",                       ID_VIEW_RGB_B
+        END
+        MENUITEM "加入歷程(&H)",                    ID_VIEW_ADDTOHISTORY
+    END
+    POPUP "視窗(&W)"
+    BEGIN
+        MENUITEM "開新視窗(&N)",                    ID_WINDOW_NEW
+        MENUITEM "重疊顯示(&C)",                    ID_WINDOW_CASCADE
+        MENUITEM "並排顯示(&T)",                    ID_WINDOW_TILE_HORZ
+        MENUITEM "排列圖示(&A)",                    ID_WINDOW_ARRANGE
+    END
+    POPUP "測試(&T)"
+    BEGIN
+        MENUITEM "測試函數 &0",                     ID_TEST_FUNCTION0
+        MENUITEM "測試函數 &1",                     ID_TEST_FUNCTION1
+        MENUITEM "測試函數 &2",                     ID_TEST_FUNCTION2
+        MENUITEM "測試函數 &3",                     ID_TEST_FUNCTION3
+        MENUITEM "測試函數 &4",                     ID_TEST_FUNCTION4
+        MENUITEM "測試函數 &5",                     ID_TEST_FUNCTION5
+        MENUITEM "測試函數 &6",                     ID_TEST_FUNCTION6
+        MENUITEM "測試函數 &7",                     ID_TEST_FUNCTION7
+        MENUITEM "測試函數 &8",                     ID_TEST_FUNCTION8
+        MENUITEM "測試函數 &9",                     ID_TEST_FUNCTION9
+    END
+    POPUP "說明(&H)"
+    BEGIN
+        MENUITEM "關於 ImgApp(&A)...",            ID_APP_ABOUT
+    END
+    POPUP "功能"
+    BEGIN
+        MENUITEM "馬賽克",                         ID_32829
+        MENUITEM "分水嶺",                         ID_32830
+        MENUITEM "gradian",                     ID_32831
+        POPUP "高斯模糊"
+        BEGIN
+            MENUITEM "3*3",                         ID_32833
+            MENUITEM "5*5",                         ID_32834
+        END
+        MENUITEM "Bilateral Filter",            ID_32835
+        POPUP "小波轉換"
+        BEGIN
+            MENUITEM "一階小波轉換",                      ID_32837
+            MENUITEM "二階小波轉換",                      ID_32838
+            MENUITEM "三階小波轉換",                      ID_32839
+            MENUITEM "反小波轉換",                       ID_32840
+            MENUITEM "四階小波轉換",                      ID_32841
+        END
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS 
+BEGIN
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY 
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 235, 55
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "關於 ImgApp"
+FONT 9, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "ImgApp 1.9.8.1 版",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2010",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "確定",IDOK,178,7,50,16,WS_GROUP
+END
+
+IDD_SET_VALUES DIALOGEX 0, 0, 250, 206
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "設定數值"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "確定",IDOK,54,186,50,14
+    PUSHBUTTON      "取消",IDCANCEL,150,186,50,14
+    GROUPBOX        "整數 (int)",IDC_STATIC_INT,6,6,78,174
+    LTEXT           "int 1",IDC_STATIC,12,18,15,8
+    LTEXT           "int 2",IDC_STATIC,12,36,15,8
+    LTEXT           "int 3",IDC_STATIC,12,55,15,8
+    LTEXT           "int 4",IDC_STATIC,12,73,15,8
+    LTEXT           "int 5",IDC_STATIC,12,90,15,8
+    LTEXT           "int 6",IDC_STATIC,12,108,15,8
+    LTEXT           "int 7",IDC_STATIC,12,127,15,8
+    LTEXT           "int 8",IDC_STATIC,12,145,15,8
+    LTEXT           "int 9",IDC_STATIC,12,162,15,8
+    EDITTEXT        IDC_EDIT_SET_VALUES_INT1,30,18,48,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_SET_VALUES_INT2,30,36,48,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_SET_VALUES_INT3,30,54,48,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_SET_VALUES_INT4,30,72,48,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_SET_VALUES_INT5,30,90,48,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_SET_VALUES_INT6,30,108,48,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_SET_VALUES_INT7,30,126,48,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_SET_VALUES_INT8,30,144,48,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_SET_VALUES_INT9,30,162,48,12,ES_AUTOHSCROLL
+    GROUPBOX        "小數 (double)",IDC_STATIC,90,6,90,102
+    LTEXT           "double 1",IDC_STATIC,96,18,28,8
+    LTEXT           "double 2",IDC_STATIC,96,36,28,8
+    LTEXT           "double 3",IDC_STATIC,96,54,28,8
+    LTEXT           "double 4",IDC_STATIC,96,72,28,8
+    LTEXT           "double 5",IDC_STATIC,96,90,28,8
+    EDITTEXT        IDC_EDIT_SET_VALUES_DOUBLE1,126,18,48,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_SET_VALUES_DOUBLE2,126,36,48,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_SET_VALUES_DOUBLE3,126,54,48,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_SET_VALUES_DOUBLE4,126,72,48,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_SET_VALUES_DOUBLE5,126,90,48,12,ES_AUTOHSCROLL
+    GROUPBOX        "布林 (BOOL)",IDC_STATIC,186,6,54,102
+    CONTROL         " BOOL 1",IDC_CHECK_SET_VALUES_BOOL1,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,192,18,42,10
+    GROUPBOX        "字串 (CString)",IDC_STATIC,90,114,150,66
+    LTEXT           "CString 1",IDC_STATIC,96,126,30,8
+    LTEXT           "CString 2",IDC_STATIC,96,144,30,8
+    LTEXT           "CString 3",IDC_STATIC,96,162,30,8
+    EDITTEXT        IDC_EDIT_SET_VALUES_CSTRING1,126,126,108,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_SET_VALUES_CSTRING2,126,144,108,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_SET_VALUES_CSTRING3,126,162,108,12,ES_AUTOHSCROLL
+    CONTROL         " BOOL 2",IDC_CHECK_SET_VALUES_BOOL2,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,192,36,42,10
+    CONTROL         " BOOL 3",IDC_CHECK_SET_VALUES_BOOL3,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,192,54,42,10
+    CONTROL         " BOOL 4",IDC_CHECK_SET_VALUES_BOOL4,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,192,72,42,10
+    CONTROL         " BOOL 5",IDC_CHECK_SET_VALUES_BOOL5,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,192,90,42,10
+END
+
+IDD_FILE_NEW DIALOGEX 0, 0, 178, 114
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "開新檔案"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "確定",IDOK,30,96,50,14
+    PUSHBUTTON      "取消",IDCANCEL,96,96,50,14
+    CONTROL         "設定大小",IDC_FILE_NEW_RADIO1,"Button",BS_AUTORADIOBUTTON,12,12,42,10
+    CONTROL         "指定路徑",IDC_FILE_NEW_RADIO2,"Button",BS_AUTORADIOBUTTON,12,54,42,10
+    EDITTEXT        IDC_FILE_NEW_EDIT1,42,30,18,12,ES_AUTOHSCROLL
+    LTEXT           "寬",IDC_STATIC,30,30,9,8
+    LTEXT           "高",IDC_STATIC,78,30,9,8,0,WS_EX_TRANSPARENT
+    EDITTEXT        IDC_FILE_NEW_EDIT2,90,30,18,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_FILE_NEW_EDIT3,30,72,108,12,ES_AUTOHSCROLL | WS_DISABLED
+    PUSHBUTTON      "瀏覽...",IDC_FILE_NEW_BUTTON1,138,72,30,14,WS_DISABLED
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,9,8,1
+ PRODUCTVERSION 1,9,8,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040403b6"
+        BEGIN
+            VALUE "CompanyName", "國立中興大學資訊科學與工程學系訊號及影像處理實驗室"
+            VALUE "FileDescription", "影像處理基本原型"
+            VALUE "FileVersion", "1, 9, 8, 1"
+            VALUE "InternalName", "ImgApp.exe"
+            VALUE "LegalCopyright", "(c) 國立中興大學資訊科學與工程學系訊號及影像處理實驗室.  All rights reserved."
+            VALUE "OriginalFilename", "ImgApp.exe"
+            VALUE "ProductName", "影像處理基本原型"
+            VALUE "ProductVersion", "1, 9, 8, 1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x404, 950
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_SET_VALUES, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 243
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 199
+    END
+
+    IDD_FILE_NEW, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 171
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 107
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDP_OLE_INIT_FAILED     "OLE 初始化失敗。請確認 OLE 程式庫的版本是否正確。"
+END
+
+STRINGTABLE 
+BEGIN
+    IDR_MAINFRAME           "ImgApp"
+    IDR_ImgAppTYPE          "\nImage\nImgApp\n\n\nImgApp.Document\nImgApp.Document"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "ImgApp"
+    AFX_IDS_IDLEMESSAGE     "就緒"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FILE_NEW             "建立新文件\n開新檔案"
+    ID_FILE_OPEN            "開啟現有文件\n開啟舊檔"
+    ID_FILE_CLOSE           "關閉使用中文件\n關閉檔案"
+    ID_FILE_SAVE            "儲存使用中文件\n儲存檔案"
+    ID_FILE_SAVE_AS         "將使用中文件以新名稱儲存\n另存新檔"
+    ID_FILE_PAGE_SETUP      "變更列印選項\n版面設定"
+    ID_FILE_PRINT_SETUP     "變更印表機及列印選項\n列印設定"
+    ID_FILE_PRINT           "列印使用中文件\n列印"
+    ID_FILE_PRINT_PREVIEW   "顯示整頁\n預覽列印"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_APP_ABOUT            "顯示程式資訊、版本號碼及著作權\n關於"
+    ID_APP_EXIT             "結束應用程式; 提示使用者儲存文件\n結束"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FILE_MRU_FILE1       "開啟這份文件"
+    ID_FILE_MRU_FILE2       "開啟這份文件"
+    ID_FILE_MRU_FILE3       "開啟這份文件"
+    ID_FILE_MRU_FILE4       "開啟這份文件"
+    ID_FILE_MRU_FILE5       "開啟這份文件"
+    ID_FILE_MRU_FILE6       "開啟這份文件"
+    ID_FILE_MRU_FILE7       "開啟這份文件"
+    ID_FILE_MRU_FILE8       "開啟這份文件"
+    ID_FILE_MRU_FILE9       "開啟這份文件"
+    ID_FILE_MRU_FILE10      "開啟這份文件"
+    ID_FILE_MRU_FILE11      "開啟這份文件"
+    ID_FILE_MRU_FILE12      "開啟這份文件"
+    ID_FILE_MRU_FILE13      "開啟這份文件"
+    ID_FILE_MRU_FILE14      "開啟這份文件"
+    ID_FILE_MRU_FILE15      "開啟這份文件"
+    ID_FILE_MRU_FILE16      "開啟這份文件"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_NEXT_PANE            "切換至下一窗格\n下一個窗格"
+    ID_PREV_PANE            "切換至上一個窗格\n上一個窗格"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_WINDOW_NEW           "為使用中的文件開啟另一個視窗\n開新視窗"
+    ID_WINDOW_ARRANGE       "將圖示排列在視窗底部\n排列圖示"
+    ID_WINDOW_CASCADE       "重疊排列視窗\n重疊顯示"
+    ID_WINDOW_TILE_HORZ     "視窗以不重疊的方式顯示\n並排顯示"
+    ID_WINDOW_TILE_VERT     "視窗以不重疊的方式顯示\n並排顯示"
+    ID_WINDOW_SPLIT         "將使用中視窗切割成窗格\n分割視窗"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_EDIT_CLEAR           "清除選取範圍\n清除"
+    ID_EDIT_CLEAR_ALL       "清除所有的項目\n全部清除"
+    ID_EDIT_COPY            "複製選取項目並放到剪貼簿\n複製"
+    ID_EDIT_CUT             "剪下選取項目並放到剪貼簿\n剪下"
+    ID_EDIT_FIND            "尋找指定的文字\n尋找"
+    ID_EDIT_PASTE           "插入剪貼簿的內容\n貼上"
+    ID_EDIT_REPEAT          "重複上次的動作\n重複"
+    ID_EDIT_REPLACE         "用不同的文字取代指定文字\n取代"
+    ID_EDIT_SELECT_ALL      "選取整份文件\n全選"
+    ID_EDIT_UNDO            "復原上次的動作\n復原"
+    ID_EDIT_REDO            "取消復原上次的動作\n取消復原"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "顯示或隱藏工具列\n切換工具列"
+    ID_VIEW_STATUS_BAR      "顯示或隱藏狀態列\n切換狀態列"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "變更視窗大小"
+    AFX_IDS_SCMOVE          "變更視窗位置"
+    AFX_IDS_SCMINIMIZE      "將視窗縮成一個圖示"
+    AFX_IDS_SCMAXIMIZE      "將視窗放到最大"
+    AFX_IDS_SCNEXTWINDOW    "切換至下一個文件視窗"
+    AFX_IDS_SCPREVWINDOW    "切換至上一個文件視窗"
+    AFX_IDS_SCCLOSE         "關閉使用中視窗並提示使用者儲存文件"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "將視窗還原成標準大小"
+    AFX_IDS_SCTASKLIST      "啟動工作清單"
+    AFX_IDS_MDICHILD        "啟動這個視窗"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_PREVIEW_CLOSE   "關閉預覽列印模式\n取消預覽"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_EDIT_HISTORY_LAST    "還原上一個動作\n上一步"
+    ID_EDIT_HISTORY_NEXT    "還原下一個動作\n下一步"
+    ID_VIEW_SIZE_SMALLER    "將影像縮小( 80% )\n縮小"
+    ID_VIEW_SIZE_LARGER     "將影像放大( 125% )\n放大"
+    ID_VIEW_SIZE_ORIGINAL   "將影像縮放成原始大小\n原始大小"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_VIEW_SIZE_FILL       "將影像縮放成最佳瀏覽效果\n最適大小"
+    ID_VIEW_SIZE_FILL_WIDTH "將影像縮放成可以看到完整寬度\n適應寬度"
+    ID_VIEW_SIZE_FILL_HEIGHT "將影像縮放成可以看到完整高度\n適應高度"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_TEST_FUNCTION0       "執行測試函數0\n測試函數0"
+    ID_TEST_FUNCTION1       "執行測試函數1\n測試函數1"
+    ID_TEST_FUNCTION2       "執行測試函數2\n測試函數2"
+    ID_TEST_FUNCTION3       "執行測試函數3\n測試函數3"
+    ID_TEST_FUNCTION4       "執行測試函數4\n測試函數4"
+    ID_TEST_FUNCTION5       "執行測試函數5\n測試函數5"
+    ID_TEST_FUNCTION6       "執行測試函數6\n測試函數6"
+    ID_TEST_FUNCTION7       "執行測試函數7\n測試函數7"
+    ID_TEST_FUNCTION8       "執行測試函數8\n測試函數8"
+    ID_TEST_FUNCTION9       "執行測試函數9\n測試函數9"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_VIEW_ADDTOHISTORY    "將目前檢視的畫面加入歷程當中\n加入歷程"
+    ID_VIEW_RGB_R           "取得紅色通道畫面"
+    ID_VIEW_RGB_G           "取得綠色通道畫面"
+    ID_VIEW_RGB_B           "取得藍色通道畫面"
+END
+
+#endif    // 中文 (台灣) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHT)
+LANGUAGE 4, 1
+#pragma code_page(950)
+#include "res\ImgApp.rc2"  // 非 Microsoft Visual C++ 編輯過的資源
+#include "afxres.rc"         // 標準元件
+#include "afxprint.rc"       // 列印/預覽列印資源
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
